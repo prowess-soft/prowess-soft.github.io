@@ -1,9 +1,95 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en-US">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <head>
-	<title></title>
-</head>
-<body>
-<h1>JMS Publisher</h1>
-</body>
-</html>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>JMS Publisher</title>
+  <link rel="stylesheet" href="assets/css/style78f7.css">
+  <script src="assets/js/jquery-3.3.0.min.js"></script>
+  <script src="assets/js/main.js"></script>
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+
+    <header>
+      <h1>JMS Publisher</h1>
+      <p>Version 2.0.0</p>
+    </header>
+
+    <div id="banner">
+      <span id="logo"></span>
+      <div class="fork">
+        <a href="index.html" class="button "><strong>Home</strong></a>
+        <a href="help.html" class="button "><strong>Help</strong></a>
+      </div>
+
+
+      <div class="downloads">
+        <span>Downloads:</span>
+        <ul>
+          <li><a href="#" class="button">EXE</a></li>
+          <li><a href="#" class="button">JAR</a></li>
+        </ul>
+      </div>
+
+    </div><!-- end banner -->
+
+    <div class="wrapper">
+      <section>
+        <h1 id="header-1">Introduction</h1>
+        <p>JMS Publisher is a client for Solace MQ. JMS Publisher implements the JMS 1.1 specification on top of the Solace JMS API, thus allowing new and existing JMS applications to connect to Solace MQ.</p>
+        <h2 id="header-2">Changelog</h2>
+
+        <blockquote>
+          <p>Version 2.0.0.</p>
+          <p>-Added option to add Message Properties</p>
+        </blockquote>
+        <h1 id="header-1">Background</h1>
+        <h3>JMS</h3>
+        <p>JMS is the standard messaging API for the JEE platform. It is available in commercial and open source implementations. Each implementation includes a JMS provider, a JMS client library, and additional, implementation-specific components for administering the messaging system. The JMS provider can be a standalone implementation of the messaging service, or a bridge to a non-JMS messaging system.</p>
+        <p>The JMS client API is standardized, so JMS applications are portable between vendor's implementations. However, the underlying messaging implementation is unspecified, so there is no interoperability between JMS implementations. Java applications that want to share messaging must all use the same JMS implementation unless bridging technology exists. Furthermore, non-Java applications cannot access JMS without a vendor-specific JMS client library to enable interoperability.</p>
+        <h3>JMS Message Types</h3>
+        <ul>
+          <li><strong>Message - </strong>Contains only header and properties fields.</li>
+          <li><strong>TextMessage - </strong>Contains a string object. TextMessages can contain XML message data.</li>
+          <li><strong>BytesMessage - </strong>A stream of uninterpreted bytes. Use a BytesMessage for encoding a message body to match an existing message format. BytesMessages generally do not include property fields.</li>
+          <li><strong>MapMessage - </strong>Contains a set of name/value pairs. The names are in string format. The values are of Java primitive datatypes.</li>
+        </ul>
+        <h3 id="header-3">JMS Message Structure</h3>
+        <p>JMS messages contain the following components:</p>
+        <ol>
+          <li>Header</li>
+          <li>Properties</li>
+          <li>Body</li>
+        </ol>
+
+        <h4>Header Fields</h4>
+        <p>JMS messages contain a fixed number of header fields. Each JMS message uses these fields regardless of
+        message type. Every JMS source and target definition includes a pre-defined set of header fields.</p>
+        <h4>Property Fields</h4>
+        <p>JMS source and target definitions can optionally include message property fields. Property fields contain
+          additional message header information. JMS providers use properties in a JMS message to give providerspecific information. Applications that use a JMS provider can add property fields with application-specific
+        information to a message.</p>
+        <h4>Body Fields</h4>
+        <p>JMS source and target definitions can optionally include a message body. The body contains one or more
+        fields. Only certain types of JMS messages contain a body.</p>
+        <h1>Usage</h1>
+        <p>For detailed instructions on usage <a href="help.html">check help page</a>.</p>
+
+      </section>
+      <footer>
+
+        <p>Project maintained by Prowess-soft</p>
+        
+        <p><small>Hosted on GitHub Pages</small></p>
+      </footer>
+    </div>
+
+    
+  </body>
+  </html>
