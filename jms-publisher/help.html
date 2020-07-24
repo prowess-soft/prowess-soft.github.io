@@ -52,7 +52,48 @@
          <h4 id="Linux/Mac Users">Linux/Mac Users</h4>
         <p>Download jar file and run that jar file using below command.</p>
         <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>java -jar JMSPublisher.jar</code></pre></div></div>
+        <h1 id="User Interface">User Interface</h1>
+        <p>
+          <img src="assets/images/jms-publisher-1.png">
+        </p>
+        <h3 id="Connection Details">1) Connection Details</h3>
+        <p>
+         In Connection details enter your JMS credentials like HOST, USERNAME,PASSWORD and VPN. To verify connection click on <b>Test Connection</b> button.
+        </p>
+        <h3 id="Message Properties">2) Message Properties</h3>
+        <p>
+          In Message Properies section you can provide JMS Properties to be attached to publishing message. This field is optional, leave this field empty if you don't want to include JMS properties in your message.
+           <blockquote>
+            <b>Note</b>
+            <p>Each property should be in new line and key values separated by "=".</p>
+          </blockquote>
+          <h4>Example</h4>
+          <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Key1=Value1
+Key2=Value2</code></pre></div></div>
+          
+        </p>
+        <h3 id="Message Payload">3) Message Payload</h3>
+        <p>
+          Messagage payload can be any string that is published as a part of JMS Message Body.
+          <h4>Example</h4>
+          <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+  "gtosplus_ops_header": {
+    "source_m": "YOMC",
+    "event_dt": "2020-02-13T16:21:25.347919",
+    "event_id": "22032020214001",
+    "trans_id": "CSBP",
+    "status_c":0
+  },
+  "gtosplus_ops_body": {
+    "pm_m": "PM1021401",
+    "csb_location_c": "loc1",
+    "filler": ""
+  }
+}
 
+</code></pre></div></div>
+          
+        </p>
 
 
       </section>
